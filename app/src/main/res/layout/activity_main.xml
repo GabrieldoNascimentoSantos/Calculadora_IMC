@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <TextView
+       style="@style/text_view"
+      android:text="@string/peso" />
+
+   <EditText
+       android:id="@+id/edit_peso"
+      style="@style/edit_text" />
+
+   <TextView
+       style="@style/text_view"
+       android:text="@string/altura" />
+
+   <EditText
+       android:id="@+id/edit_altura"
+       style="@style/edit_text" />
+
+   <Spinner
+       android:spinnerMode="dialog"
+       android:entries="@array/array_genero"
+       android:id="@+id/spinner_genero"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" />
+
+   <RadioGroup
+       android:orientation="horizontal"
+       android:id="@+id/group_gereno"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+      <RadioButton
+          android:id="@+id/radio_feminino"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+         android:text="@string/feminino"/>
+
+      <RadioButton
+          android:id="@+id/radio_masculino"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/masculino"/>
+   </RadioGroup>
+
+   <LinearLayout
+      style="@style/estilo_base">
+      <Button
+          android:id="@+id/bt_calcular"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+         android:layout_weight="2"
+         android:text="@string/calcular" />
+
+      <Button
+          android:id="@+id/bt_limpar"
+          android:layout_marginLeft="5dp"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="@string/limpar" />
+
+   </LinearLayout>
+
+   <TextView
+       android:id="@+id/tv_valor"
+       style="@style/text_view" />
+
+   <TextView
+       android:id="@+id/tv_classificacao"
+       style="@style/text_view" />
+
+
+
+
+</LinearLayout>
